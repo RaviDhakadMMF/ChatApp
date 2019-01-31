@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "131224974675",
+    "firebase_url": "https://reactnativepushnotificat-c6c06.firebaseio.com",
+    "project_id": "reactnativepushnotificat-c6c06",
+    "storage_bucket": "reactnativepushnotificat-c6c06.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131224974675:android:4091cef0446adac6",
+        "android_client_info": {
+          "package_name": "com.fcmpushnotification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "131224974675-tt2ve8m2echff0l8v25bsbcconjig4at.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1ky-0AoeCPz0eLSsrVHXaUOhSPARfZV0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
