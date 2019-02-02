@@ -19,9 +19,9 @@ const styles = StyleSheet.create({
         flex: 1, justifyContent: 'center'  
     },
     textMessage: {
-        alignSelf: 'flex-end', marginEnd: 10,backgroundColor:'red',margin:10,marginStart:150,padding:10
+        alignSelf: 'flex-end', marginEnd: 10,backgroundColor:'#dcf8c7',margin:10,marginStart:80,padding:10, borderRadius: 5,    
     },
     textMessagen: {
-        alignSelf: 'flex-start',backgroundColor:'white',margin:10,marginEnd:150,padding:10
+        alignSelf: 'flex-start',backgroundColor:'white',margin:10,marginEnd:100,padding:10
     }
 })

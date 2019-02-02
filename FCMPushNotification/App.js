@@ -7,9 +7,9 @@ import LoginPage from './src/LoginPage'
 import ChatPage from './src/ChatPage'
 
 const RootStack = createStackNavigator({
-  ChatScreen: { screen: ChatPage },  
-  LoginScreen: { screen: LoginPage },
  
+  LoginScreen: { screen: LoginPage },
+  ChatScreen: { screen: ChatPage },  
  
 },
   {

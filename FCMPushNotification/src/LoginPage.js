@@ -31,19 +31,39 @@ export default class LoginPage extends Component {
     }, 1000)
   }
 
+  componentDidMount(){
+   
+          firebase.messaging().hasPermission().then(enabled => {
+            if (enabled) {
+              firebase.messaging().getToken().then(fcmToken => {
+                if (fcmToken) {
+                  console.log('fcmToken   : - ',fcmToken)
+                  AsyncStorage.setItem('fcmToken', fcmToken);  
+                
+                } else {
+                  // user doesn't have a device token yet -- **my problem is here**
+                } 
+              });
+            } else {
+             // this.requestPermission();
+              console.log('enabled 00  : - ',JSON.stringify(enabled))  
+              // user doesn't have a device token yet -- **my problem is here**  
+            } 
+          });      
+  }
+
   handleLogin = () => {
     firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((responseJson) => {
         try {
+          console.log('user data : - ',JSON.stringify(responseJson))     
           AsyncStorage.setItem('userid',responseJson.user.uid);
-          this.props.navigation.navigate('ChatScreen')
+        // this.props.navigation.navigate('ChatScreen')
       }catch(err){  
-        console.log('async error : - ',error.message);
+        console.log('async error : - ',error.message);     
       }
       }).catch((error) => {
         console.error('Error message : - ', error);
       });
-//*********************** */
-  
   }
 
   render() {
